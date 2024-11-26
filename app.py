@@ -8,7 +8,7 @@ from tkinter import filedialog, messagebox
 from joblib import load
 from scipy import ndimage
 import math
-from unet import build_unet
+from enhancement_unet import build_unet
 import tensorflow as tf
 
 def load_model_weights(weights_path):
@@ -25,8 +25,8 @@ def load_model_weights(weights_path):
         raise ValueError(f"Error loading weights: {e}")
     return model
 
-cnn_model = load_model('cnn_model.keras')
-unet_model = load_model_weights('unet_final_model.h5')
+cnn_model = load_model('models/cnn_model.keras')
+unet_model = load_model_weights('models/unet_final_model.h5')
 
 def calculate_psnr(img1, img2):
     """Calculate PSNR between two images"""

@@ -4,7 +4,7 @@ from data_pre import DataPreprocessor
 from unet import build_unet
 
 # Dataset paths
-BASE_DIR = os.path.join('..', '..', 'dataset', 'sat_dataset')
+BASE_DIR = os.path.join('..', '..', 'sat_dataset')
 CLEAN_DIR = os.path.join(BASE_DIR, 'clean')
 NOISY_DIR = os.path.join(BASE_DIR, 'noisy')
 
@@ -82,7 +82,7 @@ def main():
     )
 
     # Save final model
-    model.save(os.path.join('models', 'unet_final_model.h5'))
+    model.save(os.path.join('..', 'models', 'unet_final_model.h5'))
 
     # Evaluate on test data
     test_loss, test_mae, test_psnr = model.evaluate(test_ds)
