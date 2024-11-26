@@ -1,0 +1,6 @@
+dataset/
+sat_dataset/
+*.npz
+*.keras
+*.joblib
+*.h5
