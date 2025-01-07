@@ -8,6 +8,8 @@ from tkinter import filedialog, messagebox
 from joblib import load
 from scipy import ndimage
 import math
+import sys
+sys.path.append('scripts')
 from enhancement_unet import build_unet
 import tensorflow as tf
 
