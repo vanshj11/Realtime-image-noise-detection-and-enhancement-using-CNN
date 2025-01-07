@@ -4,3 +4,4 @@ sat_dataset/
 *.keras
 *.joblib
 *.h5
+outcome_docs/
