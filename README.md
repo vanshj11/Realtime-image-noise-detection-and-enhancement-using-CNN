@@ -1,1 +1,2 @@
-"# Realtime-image-noise-detection-and-enhancement" 
+<h1>Realtime-image-noise-detection-and-enhancement</h1>
+This project implements a CNN to identify the different types of degradations in realtime images including gaussian, poisson, rayleigh, salt and pepper and lognormal noise. Furthermore, we enhance the image using a U-net based CNN. To use this app, simply clone the repo and run the app.py file after making sure all the required packages are installed.
